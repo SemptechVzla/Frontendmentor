@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'YoungSerif-Regular';
+    src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;    
+}
+
+@font-face {
+    font-family: 'Outfit-VariableFont_wght';
+    src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit-Regular';
+    src: url('../fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #f3e5d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300vh;
+}
+
+.marco{
+    width: 712px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.Platillo{    
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.platillo-header{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.platillo-imagen{
+    width: 656px;
+    height: 296px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.imagen-titulo {
+    font-family: 'YoungSerif-Regular';
+    font-size:  30px;
+    color: black;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.imagen-description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Outfit-VariableFont_wght';
+    color: black;
+    text-align: left;
+    opacity: 0.8;
+}
+
+.Preparation{
+    background-color: #fff7fc;
+    margin: 5px;
+    padding: 14px;    
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.Titulo-preparation{
+    color: #6d2e4b;
+    margin: 5px;
+}
+
+.Tiempo-preparation{
+    margin: 5px;
+    list-style-position: outside;
+    padding-left: 20px;
+    list-style: none;   
+
+}
+
+.Tiempo-preparation li{
+    position: relative;
+    padding: 5px;
+    padding-left: 30px; /* Deja espacio para la nueva viñeta */
+    margin-bottom: 10px;       
+}
+
+.Tiempo-preparation li::before {
+    content: '\2022'; /* Código Unicode para el bullet point */
+    position: absolute;
+    left: 0;
+    color: #6d2e4b; /* Color de la viñeta */
+    font-size: 1.2em; /* Tamaño de la viñeta */
+    line-height: 1em; /* Alineación vertical */
+}
+
+
+.Titulos-secundarios{
+    font-family: 'YoungSerif-Regular';
+    font-size:  30px;
+    color: #804837;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.Ingredientes_items{
+    margin: 5px;
+    list-style-position: outside;
+    padding-left: 20px;
+    list-style: none;     
+}
+
+.Ingredientes_items li{
+    position: relative;
+    padding: 5px;
+    padding-left: 30px; /* Deja espacio para la nueva viñeta */
+    margin-bottom: 10px;     
+   
+}
+
+.Ingredientes_items li::before {
+    content: '\2022'; /* Código Unicode para el bullet point */
+    position: absolute;
+    left: 0;
+    color: #6d2e4b; /* Color de la viñeta */
+    font-size: 1.2em; /* Tamaño de la viñeta */
+    line-height: 1em; /* Alineación vertical */
+}
+
+.Instructions_items{
+    margin: 5px;
+    list-style-position: outside;
+    padding-left: 20px;
+    list-style: none; 
+    
+}
+
+.Instructions_items li{
+    list-style-type: decimal;
+    position: relative;
+    padding: 5px;
+    padding-left: 30px; /* Deja espacio para la nueva viñeta */
+    margin-bottom: 10px; 
+    
+   
+}
+
+.Instructions_items li::before {
+    position: absolute;
+    left: 0;
+    color: #6d2e4b; /* Color de la viñeta */
+    font-size: 1.2em; /* Tamaño de la viñeta */
+    line-height: 1em; /* Alineación vertical */
+    font-weight: bold; /* Grosor de la viñeta */
+      
+}
+
+.Ingredientes_items li{
+    padding: 5px;
+    padding-left: 30px; 
+}
+
+.Nutrition{
+    margin: 5px;    
+}
+
+.Nutri-description{
+    margin: 10px;
+}
+
+.Nutri-columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    width: 100%;  
+}
+
+.column ul{
+    list-style-type: none;
+}
+
+.Nutrition_items li{
+    margin: 5px;
+    list-style-position: outside;
+    padding-left: 20px;  
+    padding: 15px;     
+}

@@ -1,0 +1,19 @@
+[submodule "product_preview"]
+   path = product_preview
+   url = https://github.com/SemptechVzla/frontendmentor.git
+
+[submodule "Blog_Previou_Card"]
+   path = Blog_Previou_Card
+   url = https://github.com/SemptechVzla/frontendmentor.git
+
+[submodule "Social_links_profile"]
+   path = Social_links_profile
+   url = https://github.com/SemptechVzla/frontendmentor.git
+
+[submodule "recipe"]
+   path = recipe
+   url = https://github.com/SemptechVzla/frontendmentor.git
+
+[submodule "start_QR"]
+   path = start_QR
+   url = https://github.com/SemptechVzla/frontendmentor.git

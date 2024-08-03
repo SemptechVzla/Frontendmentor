@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: #f5d04e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffffff;
+    width: 395px;
+    height: 527px;
+    border: 0.5px solid;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 5px 5px;   
+}
+
+
+
+.Imgcard{
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.Boton{
+   background-color:  #f5d04e;
+   border: none;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   padding: 10px 20px; 
+   cursor: pointer;
+   font-size: 15px; 
+   margin-bottom: 20px;
+}
+
+.Texto-Descripcion{
+    padding: 10px 20px; 
+    text-align: center;  
+    color: black; 
+    opacity: 0.5; 
+    
+}
+
+footer {
+  width:90%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1px;          
+}
+
+footer p{
+    padding: 25px;  
+}
