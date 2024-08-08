@@ -17,3 +17,7 @@
 [submodule "start_QR"]
    path = start_QR
    url = https://github.com/SemptechVzla/frontendmentor.git
+
+[submodule "four-cards"]
+   path = start_QR
+   url = https://github.com/SemptechVzla/frontendmentor.git
