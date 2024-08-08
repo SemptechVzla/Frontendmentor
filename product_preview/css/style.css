@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather/Merriweather-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;    
+}
+
+@font-face {
+    font-family: 'Merriweather-Bold';
+    src: url('../fonts/Merriweather/Merriweather-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;    
+}
+
+
 *{
     padding: 0;
     margin: 0;
@@ -16,8 +31,8 @@ body{
 .Container{
    display: flex;
    background-color: #fff;
-   width: 600px;
-   height: 600px;
+   width: 598px;
+   height: 448px;
    border-radius: 20px;
    overflow: hidden;
    -webkit-border-radius: 20px;
@@ -32,8 +47,9 @@ body{
     height: 100%;
 }
 
-.Product-description{
-    background-color:  green;
+.contenedor-description{
+    background-color: white;
+    padding: 30px;
     width: 300px;
     height: 100%;
 }
@@ -45,6 +61,30 @@ body{
     -ms-border-radius: 1rem 0 0 1rem;
     -o-border-radius: 1rem 0 0 1rem;
     display: block;
+}
+
+.Product-description{
+    background-color: white;
+}
+
+.Titulo-cabecera{
+    font-family: 'Merriweather';
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    margin-bottom: 15px;
+}
+
+.Titulo-principial{
+    font-family: 'Merriweather-bold';
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.Descripcion-producto{
+    font-family: 'Merriweather';
+    color: #87878f;
+    font-size: 15px;
+    margin-bottom: 20px;
 }
 
 .Product-image{
@@ -59,4 +99,60 @@ body{
 .Product-description{
     display: flex;
     flex-direction: column;
+}
+
+
+.Titulo-cabecera{
+    color: #76777c;
+    font-family: 'Merriweather';
+
+}
+
+.container-prices{
+    display: flex;
+    align-items: center;
+}
+
+.current-price {
+    font-size: 32px; 
+    font-weight: bold;
+    color: #2f7f57; 
+    margin-right: 10px; 
+}
+
+.old-price {
+    font-size: 16px; 
+    color: #aaa; 
+    text-decoration: line-through; 
+}
+
+.container-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2f7f57; 
+    color: white;
+    border: none;
+    padding: 14px 67px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn img {
+    margin-right: 8px;
+    width: 20px; 
+    height: 20px; 
+}
+
+.btn:hover {
+    background-color: #276645; 
 }
