@@ -18,3 +18,6 @@
    path = start_QR
    url = https://github.com/SemptechVzla/frontendmentor.git
 
+[submodule "four_cards"]
+   path = four_cards
+   url = https://github.com/SemptechVzla/frontendmentor.git
