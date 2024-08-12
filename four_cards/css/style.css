@@ -1,0 +1,27 @@
+:root{
+    /*Colores del proyecto */
+
+    --color-body: #fafafa;   
+    --color-supervisor:  #5bc9c8;
+    --color-team_builder: #ec5355;
+    --color-karma: #fbad4b;
+    --color-calculator: #619bda;
+    
+    /*Fuentes de Letra */
+
+    --font-primary: 'Poppins-Regular', sans-serif;  
+
+}
+
+/* Importar las fuentes locales */
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;    
+}
+
+body{
+    background-color: var(--color-body);
+}
