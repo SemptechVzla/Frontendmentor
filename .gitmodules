@@ -22,6 +22,3 @@
    path = four_cards
    url = https://github.com/SemptechVzla/frontendmentor.git
 
-[submodule "Testimonials_grid_section"]
-   path = Testimonials_grid_section
-   url = https://github.com/SemptechVzla/frontendmentor.git
