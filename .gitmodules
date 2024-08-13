@@ -23,5 +23,5 @@
    url = https://github.com/SemptechVzla/frontendmentor.git
 
 [submodule "testimonials_grid-section_main"]
-   path = testimonials_grid-section_main
+   path = testimonials_grid
    url = https://github.com/SemptechVzla/frontendmentor.git
