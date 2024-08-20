@@ -25,3 +25,7 @@
 [submodule "testimonial_grid"]
    path = testimonial_grid
    url = https://github.com/SemptechVzla/frontendmentor.git
+
+[submodule "Results_summary_component"]
+   path = Results_summary_component
+   url = https://github.com/SemptechVzla/frontendmentor.git
