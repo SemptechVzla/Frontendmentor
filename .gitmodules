@@ -29,3 +29,7 @@
 [submodule "Results_summary_component"]
    path = Results_summary_component
    url = https://github.com/SemptechVzla/frontendmentor.git
+
+[submodule "Profile-card-component"]
+   path = Profile-card-component
+   url = https://github.com/SemptechVzla/frontendmentor.git
