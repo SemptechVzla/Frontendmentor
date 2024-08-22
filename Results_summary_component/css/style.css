@@ -54,12 +54,7 @@
     display: flex;
     border-radius: var(--border-radious);
   
-    & {
-      -webkit-border-radius: var(--border-radious);
-      -moz-border-radius: var(--border-radious);
-      -ms-border-radius: var(--border-radious);
-      -o-border-radius: var(--border-radious);
-    }
+    
   }
   
   .container-morado {
@@ -73,12 +68,7 @@
     gap: 20px;
     border-radius: var(--border-radious);
   
-    & {
-      -webkit-border-radius: var(--border-radious);
-      -moz-border-radius: var(--border-radious);
-      -ms-border-radius: var(--border-radious);
-      -o-border-radius: var(--border-radious);
-    }
+    
   }
   
   .progress-circle {
@@ -93,12 +83,7 @@
     height: 200px;
     border-radius: 50%;
   
-    & {
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-    }
+    
   
     .value {
       color: var(--color-letra-titulo2);
@@ -123,12 +108,7 @@
     gap: 30px;
     border-radius: 0rem 1rem 1rem 0rem;
   
-    & {
-      -webkit-border-radius: 0rem 1rem 1rem 0rem;
-      -moz-border-radius: 0rem 1rem 1rem 0rem;
-      -ms-border-radius: 0rem 1rem 1rem 0rem;
-      -o-border-radius: 0rem 1rem 1rem 0rem;
-    }
+    
   }
   
   .titulo-result {
