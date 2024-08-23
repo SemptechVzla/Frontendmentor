@@ -131,6 +131,18 @@
     display: flex;
     flex-direction: column;
   }
+
+  .container-results{
+    display: flex;
+    width: 100%;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;  
+  }
+
+  .detail{
+    display: flex;    
+  }
   
   .items-frame {
     display: flex;
@@ -140,7 +152,7 @@
   
   .item {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 1rem;
     border-radius: 0.5rem;
