@@ -9,27 +9,31 @@
     <title>Profile card component</title>
 </head>
 <body>
-    <main class="container-general">
-        <section class="profile-user-img">
-            <figure>
-                <img src="src/image-victor.jpg" alt="Victor">
+    <article class="profile-card">
+        <header class="profile-header">
+            <figure class="profile-background">
+                <img src="src/image-victor.jpg" alt="Victor Crest" class="profile-image">
             </figure>
+        </header>
+        <section class="profile-info">
+            <h1 class="profile-name">Victor Crest <span class="profile-age">26</span></h1>
+            <p class="profile-location">London</p>
         </section>
-       <section class="profile-user">
-            <h1 class= "user">Victor Crest</h1>
-            <h2 class= "number">26</h2>
-            <h2 class= "location">London</h2>
-        </section>
-        <hr>
-        <section class="profile-user-details">
-           <h2>80k</h2>
-           <h2>Followers</h2>
-           <h2>803k</h2>
-           <h2>Likes</h2>
-           <h2>1.4k</h2>
-           <h2>Photos</h2>
-        </section>
-          
-    </main>
+        <footer class="profile-stats">
+            <section class="stat">
+                <span class="stat-value">80K</span>
+                <span class="stat-label">Followers</span>
+            </section>
+            <section class="stat">
+                <span class="stat-value">803K</span>
+                <span class="stat-label">Likes</span>
+            </section>
+            <section class="stat">
+                <span class="stat-value">1.4K</span>
+                <span class="stat-label">Photos</span>
+            </section>
+        </footer>
+    </article>
+    
 </body>
 </html>
