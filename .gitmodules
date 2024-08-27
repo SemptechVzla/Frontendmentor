@@ -34,3 +34,6 @@
    path = Profile-card-component
    url = https://github.com/SemptechVzla/frontendmentor.git
 
+[submodule "3columns-grid"]
+   path = 3columns-grid
+   url = https://github.com/SemptechVzla/frontendmentor.git
