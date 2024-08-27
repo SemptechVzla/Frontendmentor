@@ -33,3 +33,7 @@
 [submodule "Profile-card-component"]
    path = Profile-card-component
    url = https://github.com/SemptechVzla/frontendmentor.git
+
+[submodule "3-column-preview-card_component"]
+   path = 3-column-preview-card_component
+   url = https://github.com/SemptechVzla/frontendmentor.git
