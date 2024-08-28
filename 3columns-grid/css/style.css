@@ -1,6 +1,88 @@
 :root{
+   --color-background: #f2f2f2;
+   --color-background-container: #e22d4c;
    --color-orange: hsl(31, 77%, 52%);
---color-cyan:  hsl(184, 100%, 22%);
---color-darkcyan: hsl(179, 100%, 13%);
+   --color-cyan:  hsl(184, 100%, 22%);
+   --color-darkcyan: hsl(179, 100%, 13%);
+   --color-letra-blanco: #fff;
+   --font-family: 'KumbhSans-Regular';
+   --font-family2: 'BigShouldersDisplay';
 
 }
+
+@font-face {
+   font-family: 'KumbhSans-Regular';
+   src: url('../fonts/static/KumbhSans-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;    
+}
+
+@font-face {
+   font-family: 'BigShouldersDisplay';
+   src: url('../fonts/static/BigShouldersDisplay-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;    
+}
+
+body{
+   background-color: var(--color-background);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+
+   .container{
+      background-color: var(--color-background-container);
+      width: 900px;
+      height: 420px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      
+   }
+
+   .Titulos{
+      font-family: var(--font-family2);
+      color: var(--color-letra-blanco);
+      margin-bottom: 10px; 
+   }
+      
+   .Columna1 {
+   background-color: var(--color-orange);
+   }
+
+   .Columna2 {
+   background-color: var(--color-cyan);
+   }
+
+   .Columna3 {
+   background-color: var(--color-darkcyan);
+   }
+  
+   .Boton1, .Boton2, .Boton3 {
+      text-decoration: none;
+      color: var(--color-letra-blanco);
+      padding: 10px 10px;
+      border-radius: 20px;
+      border: solid;
+      max-width: 120px; 
+      text-align: center; 
+      margin-top: 30px;     
+   }
+
+  .quote-description{
+   font-family: var(--font-family);
+   margin-bottom: 20px;
+   line-height: 1.5; 
+  }
+   
+.Colu{
+   display: flex;
+   flex-direction: column;
+   padding: 30px;
+   }
+
+
+}
+
+
