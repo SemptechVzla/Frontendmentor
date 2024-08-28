@@ -37,3 +37,10 @@
 [submodule "3columns-grid"]
    path = 3columns-grid
    url = https://github.com/SemptechVzla/frontendmentor.git
+
+[submodule "Single price grid component"]
+   path = Single price grid component
+   url = https://github.com/SemptechVzla/frontendmentor.git
+
+
+ 
