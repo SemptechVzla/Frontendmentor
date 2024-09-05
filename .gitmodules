@@ -42,5 +42,9 @@
    path = Single price grid component
    url = https://github.com/SemptechVzla/frontendmentor.git
 
+[submodule "huddle-landing-page"]
+   path = huddle-landing-page
+   url = https://github.com/SemptechVzla/frontendmentor.git
+
 
  
