@@ -1,0 +1,207 @@
+:root{
+    --color-background-body: #e6eff6;
+    --color-background-container: red;
+    --color-background-fila1:  #fff;
+    --color-background-fila2-1: #2bb3b1 ;
+    --color-background-fila2-2: #4abebd;
+    --font-global: 'Karla-Regular', sans-serif;
+    --colorfont-fila1-titulo: #3caaa9;
+    --colorfont-fila1-titulo2: #c3d663;
+    --colorfont-fila1-quote: #b9b9c3;
+    --colorfont-fila2-col2-titulo1:  #fff;
+    --colorfont-fila2-col1-titulo1:  #fff;
+    --colorfont-fila2-col1-money: #fff;
+    --colorfont-fila2-col1-money-plan:  #b9b9c3;
+    --color-btn: #bfdf32;
+    --color-font-btn: #fff;
+    --font-size:  25px;
+
+
+}
+
+@font-face {
+    font-family: 'Karla-Regular';
+    src: url('../fonts/static/Karla-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-global);
+    background-color: var(--color-background-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.contenedor{
+    background-color: var(--color-background-container);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px auto;
+    grid-template-areas: 
+    "fila1"
+    "fila2";
+    width: 950px;
+    height: 681px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
+.Contenidofila1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: var(--font-size);
+    
+}
+
+.fila1{
+    background-color: var(--color-background-fila1);
+    padding: 50px;
+}
+
+.Titulo-fila1{
+    color: var(--colorfont-fila1-titulo);
+    font-weight: bold;
+}
+
+
+.Titulo2-fila1{
+    color: var(--colorfont-fila1-titulo2);
+    font-weight: bold;
+}
+
+.fila1-quote1, .fila1-quote2{
+    color: var(--colorfont-fila1-quote);   
+}
+
+.fila2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+   "Colu-izquierda Colu-derecha";
+       
+}
+
+.Contenidofila2-col1{
+    grid-area: Colu-izquierda;
+    background-color: var(--color-background-fila2-1);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+
+.Titulo-fila2-col1{
+    color: var(--colorfont-fila2-col1-titulo1);
+    font-weight: bold;
+    font-size: var(--font-size);
+    margin-bottom: 10px;
+}
+
+.price-tag {
+    color: white;
+    font-size: 40px;    
+    font-weight: bold;   
+    display: inline-block;    
+  }
+  
+  .price-tag span {
+    
+    font-weight: normal; 
+    font-size: 18px;
+    margin-top: 200px;
+  }
+
+  .signup-btn {
+    background-color: var(--color-btn); 
+    color: var(--color-font-btn); 
+    font-size: 20px; 
+    padding: 12px 40px; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    height: 70px;
+  }
+  
+  .signup-btn:hover {
+    background-color: #d4e157; 
+  }
+
+.Contenidofila2-col1 p{
+    color: var(--colorfont-fila2-col2-titulo1);
+}
+
+.Contenidofila2-col2{
+    grid-area: Colu-derecha;
+    background-color: var(--color-background-fila2-2);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;   
+}
+
+.Titulo-fila2-col2{
+    color: var(--colorfont-fila2-col2-titulo1);
+    font-weight: bold;
+    font-size: var(--font-size);
+    margin-bottom: 10px;
+}
+
+.Contenidofila2-col2 p{
+    color: var(--colorfont-fila2-col2-titulo1);
+}
+
+@media only screen and (max-width: 375px) {
+    .contenedor {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto; 
+      width: 100%; 
+      height: auto;
+    }
+  
+    .fila2 {
+      grid-template-columns: 1fr; 
+      grid-template-areas:
+        "Colu-izquierda"
+        "Colu-derecha"; 
+    }
+  
+    .Contenidofila2-col1, .Contenidofila2-col2 {
+      padding: 20px;
+    }
+  
+    .Contenidofila1 {
+      padding: 20px; 
+    }
+  
+    .Titulo-fila1, .Titulo2-fila1 {
+      font-size: 18px; 
+      text-align: center; 
+      margin-bottom: 10px; 
+      display: block; 
+      visibility: visible; 
+      z-index: 1; 
+    }
+  
+    .signup-btn {
+      width: 100%;
+      text-align: center; 
+  }
+}
