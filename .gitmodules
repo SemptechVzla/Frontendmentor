@@ -47,4 +47,9 @@
    url = https://github.com/SemptechVzla/frontendmentor.git
 
 
+[submodule "stats-preview-card-component-main"]
+   path = stats-preview-card-component-main
+   url = https://github.com/SemptechVzla/frontendmentor.git
+
+
  
