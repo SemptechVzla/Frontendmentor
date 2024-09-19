@@ -1,0 +1,129 @@
+:root{
+    --color-background-body: hsl(233, 46%, 7%);
+    --color-background-container: hsl(246, 38%, 16%);
+    --color-font-white: hsl(210, 14%, 97%);
+    --color-font-purple: 	hsl(273, 47%, 59%);
+    --color-font-gray: 	hsl(245, 10%, 48%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-background-body);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    "Container"
+    ; 
+}
+
+.container{
+    background-color: var(--color-background-container);
+    width: 390px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+    "Imagen-principal"
+    "Titulo"
+    "Descripcion"
+    "Companies"
+    "Templates"
+    "Queries"
+    ;   
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    gap: 10px;    
+}
+
+.Cabecera{
+    grid-area: Imagen-principal; 
+    display: flex;    
+
+     img{
+        filter: invert(24%) sepia(5%) saturate(6847%) hue-rotate(236deg) brightness(90%) contrast(121%);
+        width: 390px;
+        height: 243px;
+        border-radius: 10px 10px 0px 0px;
+        -webkit-border-radius: 10px 10px 0px 0px;
+        -moz-border-radius: 10px 10px 0px 0px;
+        -ms-border-radius: 10px 10px 0px 0px;
+        -o-border-radius: 10px 10px 0px 0px;
+        -webkit-filter: invert(24%) sepia(5%) saturate(6847%) hue-rotate(236deg) brightness(90%) contrast(121%);
+    }
+}  
+
+.section-principal{
+    grid-area: Titulo;
+    display: flex;
+    margin: 1px 53px;
+
+    .Title-h1{
+    text-align: center;
+    color: var(--color-font-white);
+    
+        span {
+        color: var(--color-font-purple);
+        }
+    }      
+}
+
+.section-description{
+    grid-area: Descripcion;
+    display: flex;
+    margin-bottom: 20px;
+   
+    .Description-h2{
+        text-align: center;
+        margin: 1px 53px;
+        font-size: 20px;
+        color: var(--color-font-gray);
+    } 
+}
+
+.section-companies{
+    grid-area: Companies;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;    
+    color: var(--color-font-white);
+    
+    span {
+        color: var(--color-font-gray);
+        }
+}
+
+.section-templates{
+    grid-area: Templates;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;    
+    color: var(--color-font-white);
+    
+    span {
+        color: var(--color-font-gray);
+        }
+}
+
+.section-queries{
+ grid-area: Queries;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-bottom: 20px;    
+ color: var(--color-font-white);
+ 
+ span {
+     color: var(--color-font-gray);
+     }
+}
