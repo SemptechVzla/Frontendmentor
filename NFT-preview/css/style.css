@@ -1,1 +1,21 @@
-x
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --color-Soft-blue: hsl(215, 51%, 70%);
+    --color-Cyan: hsl(178, 100%, 50%);
+    --color-Very-darkblue1: hsl(217, 54%, 11%);
+    --color-Very-darkblue2:  hsl(216, 50%, 16%);
+    --color-Very-darkblue3: hsl(215, 32%, 27%);
+    --color-White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--color-Very-darkblue1);
+}

@@ -51,5 +51,9 @@
    path = stats-preview-card-component-main
    url = https://github.com/SemptechVzla/frontendmentor.git
 
+[submodule "NFT-preview"]
+   path = NFT-preview
+   url = https://github.com/SemptechVzla/frontendmentor.git
 
- 
+
+
