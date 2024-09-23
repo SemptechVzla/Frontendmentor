@@ -14,6 +14,214 @@
 
 body{
     background-color: var(--color-background-body);
+    
+}
+
+.container{
+    background-color: var(--color-background-container);
+    width: 390px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+    "Cabecera"
+    "section-principal"
+    ; 
+  
+}
+
+.Cabecera{
+    grid-area: Cabecera; 
+    display: flex;    
+
+     img{
+        filter: invert(24%) sepia(5%) saturate(6847%) hue-rotate(236deg) brightness(90%) contrast(121%);
+        width: 390px;
+        height: 243px;
+        border-radius: 10px 10px 0px 0px;
+        -webkit-border-radius: 10px 10px 0px 0px;
+        -moz-border-radius: 10px 10px 0px 0px;
+        -ms-border-radius: 10px 10px 0px 0px;
+        -o-border-radius: 10px 10px 0px 0px;
+        -webkit-filter: invert(24%) sepia(5%) saturate(6847%) hue-rotate(236deg) brightness(90%) contrast(121%);
+    }
+}  
+
+.section-principal{
+    grid-area: section-principal;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:    
+    "Titulo"
+    "Descripcion"
+    "Companies"    
+    ;
+}
+
+.Title-h1{
+    font-size: 40px;
+    text-align: center;
+    color: var(--color-font-white);
+    
+        span {
+        color: var(--color-font-purple);
+        }
+    }      
+
+    .Description-h2{
+        text-align: center;      
+        font-size: 21px;
+        color: var(--color-font-gray);
+    } 
+
+
+.Status-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px; 
+    gap: 20px;   
+}
+
+
+.section-companies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-font-white);
+ 
+ span {
+     color: var(--color-font-gray);
+     }
+}
+
+
+.section-templates{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-font-white);
+ 
+ span {
+     color: var(--color-font-gray);
+     }
+}
+
+
+.section-queries{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-font-white);
+    margin-bottom: 20px;    
+ 
+ span {
+     color: var(--color-font-gray);
+     }
+}
+
+
+/* DEsktop de aqui para abajo  */
+
+
+@media (min-width: 1440px) and (max-width: 2000px) {
+
+    body{
+        background-color: var(--color-background-body);
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+} 
+
+    .container{
+        background-color: var(--color-background-container);
+        width: 1440px;
+        height: 600px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:        
+        "section-principal Cabecera" 
+        ;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
+   
+.section-principal {
+    grid-area: section-principal;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "section-principal"
+    "section-description"
+    "Status-section"
+    ;
+    padding: 50px;    
+}
+
+.Title-h1{
+    color: var(--color-font-white);
+    font-size: 55px;
+    ;
+        span {
+        color: var(--color-font-purple);
+        }
+    } 
+
+.Description-h2{
+    font-size: 30px;
+    color: var(--color-font-gray);
+    } 
+
+.Status-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "section-companies section-templates section-queries"
+    ;
+    gap: 20px;
+    
+    span {
+        color: var(--color-font-gray);
+        }
+    h2,h3{
+        color: var(--color-font-white);
+    }
+}
+
+.Cabecera {
+    grid-area: Cabecera;
+    display: flex;    
+
+    img{
+        filter: invert(24%) sepia(5%) saturate(6847%) hue-rotate(236deg) brightness(90%) contrast(121%);
+        width: 720px;
+        height: 600px;
+        border-radius: 0px 20px 20px 0px;
+        -webkit-border-radius: 0px 20px 20px 0px;
+        -moz-border-radius: 0px 20px 20px 0px;
+        -ms-border-radius: 0px 20px 20px 0px;
+        -o-border-radius: 0px 20px 20px 0px;
+        -webkit-filter: invert(24%) sepia(5%) saturate(6847%) hue-rotate(236deg) brightness(90%) contrast(121%);
+    }
+ }
+
+
+
+
+
+}
+
+
+/* respaldo
+
+body{
+    background-color: var(--color-background-body);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
@@ -127,3 +335,7 @@ body{
      color: var(--color-font-gray);
      }
 }
+
+
+
+*/
