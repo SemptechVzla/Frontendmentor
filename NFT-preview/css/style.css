@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 :root{
     --color-Soft-blue: hsl(215, 51%, 70%);
@@ -17,9 +16,7 @@
 }
 
 
-
-
-@media (min-width: 1440px) and (max-width: 2000px) {
+@media (min-width: 375px) and (max-width: 2000px) {
 
 
 body{
@@ -48,6 +45,8 @@ body{
    -ms-border-radius: 20px;
    -o-border-radius: 20px;
    padding: 20px;
+   gap: 20px;
+   
 }
 
 .Cabecera {
@@ -75,18 +74,9 @@ body{
         "Titulo-descrip"
         "Cripto-tiempo"
    ;
+   gap: 10px;
    
 }
-
-.Cripto-tiempo{
-    grid-area: Cripto-tiempo;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-areas: 
-    "cripto tiempo"    
-    ;
-}
-
 
 .Titulo-h2{
     color: var(--color-White);
@@ -96,6 +86,104 @@ body{
     color: var(--color-gray)
 }
 
+.Cripto-tiempo{
+    grid-area: Cripto-tiempo;
+    display: grid;
+    grid-template-columns: auto 1fr;
+/*    grid-template-columns: repeat(2,1fr);*/
+    grid-template-areas: 
+    "cripto espacio1 tiempo"    
+    ;
+}
 
+.cripto{
+    grid-area: cripto;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* grid-template-columns: repeat(2, 1fr);*/
+    grid-template-areas: 
+    "ETH ETH-saldo"    
+    ;
+    align-items: center; 
+    
+}
+
+.ETH{
+    grid-area: ETH;
+    
+}
+
+.ETH img {
+    width: auto;
+    height: auto;
+    max-height: 20px; /* Ajusta el tamaño según tu diseño si es necesario */
+}
+
+.ETH-saldo {
+    grid-area: ETH-saldo;
+    padding-left: 5px; /* Espacio entre el icono y el saldo */
+    color: var(--color-Cyan);
+}
+
+.tiempo{
+    grid-area: tiempo;    
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* grid-template-columns: repeat(2,1fr);*/
+    grid-template-areas: 
+    "clock clock-tiempo"  
+    ;
+    align-items: center;
+}
+
+.clock {
+    grid-area: clock;
+}
+
+.clock img {
+    width: auto;
+    height: auto;
+    max-height: 20px;
+}
+
+.clock-tiempo {
+    grid-area: clock-tiempo;
+    padding-left: 5px;
+    color: var(--color-gray);
+}
+
+.footer{
+    border-top: solid;
+    border-radius: 1px;
+    color: var(--color-gray);
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.white-nombre{
+    color: var(--color-White);
+}
+
+.foto-user img {
+   
+    background-color: white;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    
+}
+  
 
 }
